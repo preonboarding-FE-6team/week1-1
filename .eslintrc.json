@@ -33,9 +33,7 @@
     "arrow-parens": ["error", "as-needed"], // a => {}
     "no-param-reassign": ["error", { "props": false }],
     "import/no-unresolved": "off",
-    "import/extensions": [
-      "off"
-    ],
+    "import/extensions": ["off"],
     "no-unused-expressions": [
       "error",
       {

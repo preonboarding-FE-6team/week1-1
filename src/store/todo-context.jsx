@@ -9,7 +9,7 @@ const TodosContext = React.createContext({
 const TodosDisPatchContext = React.createContext({
   addTodo: () => {},
   updateTodo: (id, updateData) => {},
-  removeTodo: id => { },
+  removeTodo: id => {},
 });
 
 const TodosContextProvider = ({ children }) => {

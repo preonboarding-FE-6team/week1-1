@@ -35,10 +35,6 @@ const TodoItem = ({ id, todo, isCompleted }) => {
     setEditMode(prevMode => !prevMode);
   };
 
-  const clickCompleteTodo = () => {
-    updateTodo(null, id, todo, !isCompleted)
-  }
-
   if (editMode) {
     return (
       <li className={classes['todo-item']}>
@@ -54,7 +50,11 @@ const TodoItem = ({ id, todo, isCompleted }) => {
   return (
     <li className={classes['todo-item']}>
       <div className={classes['checkbox-container']}>
-        <img className={classes['i-img']} onClick={updateTodo.bind(null, id, todo, !isCompleted)} src={isCompleted ? `/icon/check-o.png` : `/icon/check.svg`} />
+        <img
+          className={classes['i-img']}
+          onClick={updateTodo.bind(null, id, todo, !isCompleted)}
+          src={isCompleted ? `/icon/check-o.png` : `/icon/check.svg`}
+        />
         {/* <input
           type="checkbox"
           id="check"
