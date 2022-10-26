@@ -1,10 +1,10 @@
-import React, { useState, useRef, useEffect } from "react";
-import useInput from "../../hooks/useInput";
-import useHttp from "../../hooks/useHttp";
-import { useNavigate } from "react-router-dom";
-import Button from "../UI/Button";
-import Input from "../UI/Input";
-import classes from "./AuthForm.module.css";
+import React, { useState, useRef, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
+import Button from '../UI/Button';
+import Input from '../UI/Input';
+import classes from './AuthForm.module.css';
+import useInput from '../../hooks/useInput';
+import useHttp from '../../hooks/useHttp';
 
 const AuthForm = () => {
   const navigate = useNavigate();
@@ -14,13 +14,13 @@ const AuthForm = () => {
     valueIsValid: emailIsValid,
     changeHandler: emailChangeHandler,
     reset: emailReset,
-  } = useInput((value) => value.includes("@"));
+  } = useInput(value => value.includes('@'));
   const {
     value: passwordValue,
     valueIsValid: passwordIsValid,
     changeHandler: passwordChangeHandler,
     reset: passwordReset,
-  } = useInput((value) => value.length >= 8);
+  } = useInput(value => value.length >= 8);
 
   const sendRequest = useHttp();
   const [loginMode, setLoginMode] = useState(true);
@@ -31,28 +31,29 @@ const AuthForm = () => {
   }, [loginMode]);
 
   const changeAuthHandler = () => {
-    setLoginMode((prevMode) => !prevMode);
+    setLoginMode(prevMode => !prevMode);
     emailReset();
     passwordReset();
   };
 
-  const setToken = (token) => {
-    window.localStorage.setItem("authToken", token["access_token"]);
+  const setToken = token => {
+    // eslint-disable-next-line
+    window.localStorage.setItem('authToken', token['access_token']);
 
-    navigate("/todo");
+    navigate('/todo');
   };
 
-  const submitHandler = (e) => {
+  const submitHandler = e => {
     e.preventDefault();
 
-    const url = loginMode ? "auth/signin" : "auth/signup";
+    const url = loginMode ? 'auth/signin' : 'auth/signup';
 
     sendRequest(
       url,
       {
-        method: "POST",
+        method: 'POST',
         headers: {
-          "Content-Type": "application/json",
+          'Content-Type': 'application/json',
         },
         body: JSON.stringify({
           email: emailValue,
@@ -64,36 +65,39 @@ const AuthForm = () => {
   };
   return (
     <div className={classes.auth}>
-      <h1>{loginMode ? "로그인" : "회원가입"}</h1>
+      <img src={loginMode ? '/icon/login.svg' : '/icon/sign-up.svg'} />
+      <h1>{loginMode ? 'LOGIN 👋🏻' : 'SIGN UP 👋🏻'}</h1>
       <form onSubmit={submitHandler}>
         <Input
-          id={"email"}
-          label={"이메일"}
-          name={"email"}
-          type={"email"}
+          id={'email'}
+          label={'이메일'}
+          name={'email'}
+          type={'email'}
           value={emailValue}
           onChange={emailChangeHandler}
           ref={emailInputRef}
+          placeholder="이메일"
         />
         <Input
-          id={"password"}
-          label={"비밀번호"}
-          name={"password"}
-          type={"password"}
+          id={'password'}
+          label={'비밀번호'}
+          name={'password'}
+          type={'password'}
           value={passwordValue}
           onChange={passwordChangeHandler}
+          placeholder="비밀번호"
         />
         <div className={classes.actions}>
           <Button
-            className={"submit"}
+            className={'submit'}
             disabled={!(emailIsValid && passwordIsValid)}
-            text={loginMode ? "로그인" : "회원가입"}
+            text={loginMode ? '로그인' : '회원가입'}
           />
           <Button
-            className={"toggle"}
+            className={'toggle'}
             type="button"
             onClick={changeAuthHandler}
-            text={loginMode ? "회원가입 하기" : "로그인 하기"}
+            text={loginMode ? '회원가입 하기' : '로그인 하기'}
           />
         </div>
       </form>

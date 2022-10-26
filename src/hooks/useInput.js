@@ -1,11 +1,11 @@
-import { useState } from "react";
+import { useState } from 'react';
 
-const useInput = (validateValue, initValue = "") => {
+const useInput = (validateValue, initValue = '') => {
   const [inputState, setInputState] = useState(initValue);
 
   const valueIsValid = validateValue(inputState);
 
-  const changeHandler = (e) => {
+  const changeHandler = e => {
     setInputState(e.target.value);
   };
 

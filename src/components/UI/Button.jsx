@@ -1,20 +1,13 @@
-import React from "react";
-import classes from "./Button.module.css";
+import React from 'react';
+import classes from './Button.module.css';
 
 const Button = ({ className, type, disabled, onClick, text }) => {
-  const btnClass = ["submit", "toggle", "positive", "negative"].includes(
-    className
-  )
+  const btnClass = ['submit', 'toggle', 'positive', 'negative', 'add-submit'].includes(className)
     ? className
-    : "default";
+    : 'default';
 
   return (
-    <button
-      className={`${classes.button} ${classes[btnClass]}`}
-      type={type}
-      onClick={onClick}
-      disabled={disabled}
-    >
+    <button className={`${classes.button} ${classes[btnClass]}`} type={type} onClick={onClick} disabled={disabled}>
       {text}
     </button>
   );
