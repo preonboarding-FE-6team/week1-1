@@ -1,10 +1,10 @@
 import React, { useState, useRef, useEffect } from 'react';
-import useInput from '../../hooks/useInput';
-import useHttp from '../../hooks/useHttp';
 import { useNavigate } from 'react-router-dom';
 import Button from '../UI/Button';
 import Input from '../UI/Input';
 import classes from './AuthForm.module.css';
+import useInput from '../../hooks/useInput';
+import useHttp from '../../hooks/useHttp';
 
 const AuthForm = () => {
   const navigate = useNavigate();
@@ -37,6 +37,7 @@ const AuthForm = () => {
   };
 
   const setToken = token => {
+    // eslint-disable-next-line
     window.localStorage.setItem('authToken', token['access_token']);
 
     navigate('/todo');
@@ -64,7 +65,7 @@ const AuthForm = () => {
   };
   return (
     <div className={classes.auth}>
-      <img src={`/icon/login.svg`} />
+      <img src={loginMode ? '/icon/login.svg' : '/icon/sign-up.svg'} />
       <h1>{loginMode ? 'LOGIN 👋🏻' : 'SIGN UP 👋🏻'}</h1>
       <form onSubmit={submitHandler}>
         <Input

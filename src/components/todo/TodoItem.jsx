@@ -35,13 +35,17 @@ const TodoItem = ({ id, todo, isCompleted }) => {
     setEditMode(prevMode => !prevMode);
   };
 
+  const clickCompleteTodo = () => {
+    updateTodo(null, id, todo, !isCompleted)
+  }
+
   if (editMode) {
     return (
       <li className={classes['todo-item']}>
         <Input type={'text'} id={'text'} ref={editInputRef} />
         <div>
-          <Button text={'제출'} className={'positive'} onClick={updateTodoHandler} />
-          <Button text={'취소'} className={'negative'} onClick={toggleEditHandler} />
+          <img src={`/icon/i_save.png`} className={classes['i-img']} onClick={updateTodoHandler} />
+          <img src={`/icon/i_cancel.png`} className={classes['i-img']} onClick={toggleEditHandler} />
         </div>
       </li>
     );
@@ -50,19 +54,20 @@ const TodoItem = ({ id, todo, isCompleted }) => {
   return (
     <li className={classes['todo-item']}>
       <div className={classes['checkbox-container']}>
-        <input
+        <img className={classes['i-img']} onClick={updateTodo.bind(null, id, todo, !isCompleted)} src={isCompleted ? `/icon/check-o.png` : `/icon/check.svg`} />
+        {/* <input
           type="checkbox"
           id="check"
           checked={isCompleted}
           onChange={updateTodo.bind(null, id, todo, !isCompleted)}
-        />
+        /> */}
         <label htmlFor="check" className={isCompleted ? classes.completed : ''}>
           {todo}
         </label>
       </div>
       <div className={classes['btn-container']}>
-        <Button text={'수정'} className={'positive'} onClick={toggleEditHandler} />
-        <Button text={'삭제'} className={'negative'} onClick={removeTodo.bind(null, id)} />
+        <img src={`/icon/i_fix.png`} className={classes['i-img']} onClick={toggleEditHandler} />
+        <img src={`/icon/i_delete.png`} className={classes['i-img']} onClick={removeTodo.bind(null, id)} />
       </div>
     </li>
   );
