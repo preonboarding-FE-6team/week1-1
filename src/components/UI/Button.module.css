@@ -1,0 +1,64 @@
+.button {
+  font: inherit;
+  color: #201d0f;
+  padding: 8px 36px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.default {
+  background-color: #ececec;
+}
+
+.submit {
+  background-color: #ebb002;
+  border: 1px solid #ebb002;
+}
+
+.submit:disabled {
+  background-color: #ccc;
+  border-color: rgb(105, 105, 105);
+  cursor: not-allowed;
+}
+
+.submit:disabled:hover {
+  background-color: #ccc;
+  border-color: rgb(105, 105, 105);
+}
+
+.submit:hover {
+  background-color: #ebc002;
+  border-color: #ebc002;
+}
+
+.toggle {
+  margin-top: 16px;
+  font-size: 14px;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+}
+
+.toggle:hover {
+  background-color: transparent;
+  color: #ccc;
+}
+
+.positive {
+  width: 54px;
+  height: 40px;
+  background-color: #64c964;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  margin: 0 2px 0 12px;
+}
+
+.negative {
+  width: 54px;
+  height: 40px;
+  background-color: #fd565f;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+}

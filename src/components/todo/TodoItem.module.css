@@ -1,0 +1,41 @@
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.todo-item .completed {
+  text-decoration: line-through;
+}
+
+.todo-item label {
+  margin-left: 20px;
+  text-align: left;
+}
+
+.todo-item input {
+  border: 1px solid rgb(129, 127, 127);
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  width: 78%;
+  word-break: break-all;
+}
+
+.checkbox-container input {
+  width: 20px;
+  height: 20px;
+}
+
+.checkbox-container label {
+  width: 80%;
+}
+
+.btn-container {
+  display: flex;
+  flex-wrap: nowrap;
+}

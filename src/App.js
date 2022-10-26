@@ -1,9 +1,15 @@
-import './App.css';
+import { Routes, Route } from "react-router-dom";
+import Auth from "./pages/Auth";
+import Todo from "./pages/Todo";
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <h1>test</h1>
+      <Routes>
+        <Route path="/" element={<Auth />} />
+        <Route path="/todo" element={<Todo />} />
+      </Routes>
     </div>
   );
 }
