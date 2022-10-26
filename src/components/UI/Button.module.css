@@ -1,9 +1,10 @@
 .button {
-  font: inherit;
-  color: #201d0f;
-  padding: 8px 36px;
-  border-radius: 4px;
-  cursor: pointer;
+  width: 100%;
+    border-radius: 20px;
+    padding: 15px;
+    text-align: center;
+    color: white;
+    margin-top: 25px;
 }
 
 .default {
@@ -11,13 +12,13 @@
 }
 
 .submit {
-  background-color: #ebb002;
-  border: 1px solid #ebb002;
+  /* background-color: #ebb002;
+                  border: 1px solid #ebb002; */
 }
 
 .submit:disabled {
-  background-color: #ccc;
-  border-color: rgb(105, 105, 105);
+  background-color: #a5c4ff;
+    color: white;
   cursor: not-allowed;
 }
 
@@ -26,22 +27,19 @@
   border-color: rgb(105, 105, 105);
 }
 
-.submit:hover {
-  background-color: #ebc002;
-  border-color: #ebc002;
-}
-
 .toggle {
   margin-top: 16px;
-  font-size: 14px;
   background-color: transparent;
   border: none;
-  color: #fff;
+  font-size: 12px;
+    text-decoration: underline;
+    margin-top: 15px;
+    color: black;
 }
 
 .toggle:hover {
   background-color: transparent;
-  color: #ccc;
+  color: black;
 }
 
 .positive {

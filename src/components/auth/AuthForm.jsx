@@ -64,7 +64,8 @@ const AuthForm = () => {
   };
   return (
     <div className={classes.auth}>
-      <h1>{loginMode ? "로그인" : "회원가입"}</h1>
+      <img src={`/icon/login.svg`} />
+      <h1>{loginMode ? "LOGIN 👋🏻" : "SIGN UP 👋🏻"}</h1>
       <form onSubmit={submitHandler}>
         <Input
           id={"email"}
@@ -74,6 +75,7 @@ const AuthForm = () => {
           value={emailValue}
           onChange={emailChangeHandler}
           ref={emailInputRef}
+          placeholder="이메일"
         />
         <Input
           id={"password"}
@@ -82,6 +84,7 @@ const AuthForm = () => {
           type={"password"}
           value={passwordValue}
           onChange={passwordChangeHandler}
+          placeholder="비밀번호"
         />
         <div className={classes.actions}>
           <Button

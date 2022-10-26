@@ -1,6 +1,5 @@
 .input {
   margin-bottom: 0.5rem;
-  padding: 0 20px;
 }
 
 .input label {
@@ -13,19 +12,15 @@
 }
 
 .input input {
-  display: block;
-  box-sizing: border-box;
-  font: inherit;
-  color: #181818;
-  border-radius: 4px;
   width: 100%;
-  text-align: left;
-  padding: 8px;
-}
-
-.default input {
-  background-color: #f1f1f1;
-  border: 1px solid #fff;
+    border: 1px solid #cdcdcd;
+    height: 50px;
+    padding: 0 20px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    font-size: 16px;
+  box-sizing: border-box;
+  color: #27282a;
 }
 
 .todo-input {
