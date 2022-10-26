@@ -31,7 +31,7 @@ const TodoForm = () => {
           ref={todoInputRef}
           placeholder="해야할 일을 작성해주세요!"
         />
-        <Button text={'+ 추가'} className={'submit'} />
+        <Button text={'+ 추가'} className={'add-submit'} />
       </form>
     </>
   );
