@@ -1,9 +1,9 @@
-import React from "react";
-import { Navigate } from "react-router-dom";
-import AuthForm from "../components/auth/AuthForm";
+import React from 'react';
+import { Navigate } from 'react-router-dom';
+import AuthForm from '../components/auth/AuthForm';
 
 const Auth = () => {
-  if (window.localStorage.getItem("authToken")) {
+  if (window.localStorage.getItem('authToken')) {
     return <Navigate to="/todo"></Navigate>;
   }
 

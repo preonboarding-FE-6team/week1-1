@@ -1,6 +1,6 @@
-import React, { useState, useEffect, useMemo, useCallback } from "react";
-import useHttp from "../hooks/useHttp";
-import { useLocation } from "react-router-dom";
+import React, { useState, useEffect, useMemo, useCallback } from 'react';
+import { useLocation } from 'react-router-dom';
+import useHttp from '../hooks/useHttp';
 
 const TodosContext = React.createContext({
   todos: [],
@@ -9,21 +9,21 @@ const TodosContext = React.createContext({
 const TodosDisPatchContext = React.createContext({
   addTodo: () => {},
   updateTodo: (id, updateData) => {},
-  removeTodo: (id) => {},
+  removeTodo: id => { },
 });
 
 const TodosContextProvider = ({ children }) => {
   const sendRequest = useHttp();
   const [todos, setTodos] = useState([]);
   const { pathname } = useLocation();
-  const token = localStorage.getItem("authToken") || "";
+  const token = localStorage.getItem('authToken') || '';
 
   useEffect(() => {
-    if (pathname === "/todo" && token) {
+    if (pathname === '/todo' && token) {
       sendRequest(
-        "todos",
+        'todos',
         {
-          method: "GET",
+          method: 'GET',
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -33,31 +33,29 @@ const TodosContextProvider = ({ children }) => {
     }
   }, [pathname, sendRequest, token]);
 
-  const addTodos = (newTodo) => {
-    setTodos((prevTodos) => [newTodo, ...prevTodos]);
+  const addTodos = newTodo => {
+    setTodos(prevTodos => [newTodo, ...prevTodos]);
   };
 
-  const updateTodos = (newTodo) => {
-    setTodos((prevTodos) =>
-      prevTodos.map((todo) => (todo.id === newTodo.id ? newTodo : todo))
-    );
+  const updateTodos = newTodo => {
+    setTodos(prevTodos => prevTodos.map(todo => (todo.id === newTodo.id ? newTodo : todo)));
   };
 
-  const removeTodos = (id) => {
-    setTodos((prevTodos) => prevTodos.filter((todo) => todo.id !== id));
+  const removeTodos = id => {
+    setTodos(prevTodos => prevTodos.filter(todo => todo.id !== id));
   };
 
   const addTodoHandler = useCallback(
-    (todo) => {
+    todo => {
       if (todo.trim().length === 0) return;
 
       sendRequest(
-        "todos",
+        'todos',
         {
-          method: "POST",
+          method: 'POST',
           headers: {
             Authorization: `Bearer ${token}`,
-            "Content-Type": "application/json",
+            'Content-Type': 'application/json',
           },
           body: JSON.stringify({
             todo,
@@ -74,10 +72,10 @@ const TodosContextProvider = ({ children }) => {
       sendRequest(
         `todos/${id}`,
         {
-          method: "PUT",
+          method: 'PUT',
           headers: {
             Authorization: `Bearer ${token}`,
-            "Content-Type": "application/json",
+            'Content-Type': 'application/json',
           },
           body: JSON.stringify({
             todo,
@@ -91,11 +89,11 @@ const TodosContextProvider = ({ children }) => {
   );
 
   const removeTodoHandler = useCallback(
-    (id) => {
+    id => {
       sendRequest(
         `todos/${id}`,
         {
-          method: "DELETE",
+          method: 'DELETE',
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -117,9 +115,7 @@ const TodosContextProvider = ({ children }) => {
 
   return (
     <TodosContext.Provider value={todos}>
-      <TodosDisPatchContext.Provider value={todoDispatch}>
-        {children}
-      </TodosDisPatchContext.Provider>
+      <TodosDisPatchContext.Provider value={todoDispatch}>{children}</TodosDisPatchContext.Provider>
     </TodosContext.Provider>
   );
 };

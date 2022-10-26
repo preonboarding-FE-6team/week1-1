@@ -1,10 +1,10 @@
 .button {
   width: 100%;
-    border-radius: 20px;
-    padding: 15px;
-    text-align: center;
-    color: white;
-    margin-top: 25px;
+  border-radius: 20px;
+  padding: 15px;
+  text-align: center;
+  color: white;
+  margin-top: 25px;
 }
 
 .default {
@@ -18,7 +18,7 @@
 
 .submit:disabled {
   background-color: #a5c4ff;
-    color: white;
+  color: white;
   cursor: not-allowed;
 }
 
@@ -32,9 +32,9 @@
   background-color: transparent;
   border: none;
   font-size: 12px;
-    text-decoration: underline;
-    margin-top: 15px;
-    color: black;
+  text-decoration: underline;
+  margin-top: 15px;
+  color: black;
 }
 
 .toggle:hover {

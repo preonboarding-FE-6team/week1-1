@@ -1,18 +1,15 @@
-import { useCallback } from "react";
+import { useCallback } from 'react';
 
 const useHttp = () => {
   const sendRequest = useCallback(async (url, requestConfig, applyData) => {
     try {
-      const response = await fetch(
-        `https://pre-onboarding-selection-task.shop/${url}`,
-        requestConfig
-      );
+      const response = await fetch(`https://pre-onboarding-selection-task.shop/${url}`, requestConfig);
 
       if (!response.ok) {
-        throw new Error("Request failed");
+        throw new Error('Request failed');
       }
 
-      if (requestConfig.method !== "DELETE") {
+      if (requestConfig.method !== 'DELETE') {
         const data = await response.json();
 
         applyData(data);

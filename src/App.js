@@ -1,7 +1,7 @@
-import { Routes, Route } from "react-router-dom";
-import Auth from "./pages/Auth";
-import Todo from "./pages/Todo";
-import "./App.css";
+import { Routes, Route } from 'react-router-dom';
+import Auth from './pages/Auth';
+import Todo from './pages/Todo';
+import './App.css';
 
 function App() {
   return (

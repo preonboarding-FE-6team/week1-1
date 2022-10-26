@@ -13,12 +13,12 @@
 
 .input input {
   width: 100%;
-    border: 1px solid #cdcdcd;
-    height: 50px;
-    padding: 0 20px;
-    margin-bottom: 10px;
-    border-radius: 20px;
-    font-size: 16px;
+  border: 1px solid #cdcdcd;
+  height: 50px;
+  padding: 0 20px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  font-size: 16px;
   box-sizing: border-box;
   color: #27282a;
 }
