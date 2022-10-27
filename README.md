@@ -296,7 +296,9 @@ React, React-router-dom, axios, npm, CSS
 
 ## 6. 최적화
 
-- 선정이유: `React.memo` 를 사용해 props가 변하지 않는 투두 아이템 리렌더링 방지
+### 6-1. `React.memo` 사용
+
+- 선정이유: Memoization 기능을 사용해 props가 변하지 않는 투두 아이템 리렌더링 방지
 - 코드 설계 방식
 
   ```jsx
@@ -311,7 +313,18 @@ React, React-router-dom, axios, npm, CSS
 
   export default React.memo(TodoItem);
   ```
+  
+### 6-2. `useCallback` 사용
 
+- 선정이유: useCallback을 사용해 무분별한 함수 호출 방지    
+- 코드 설계 방식
+
+  ```jsx
+  const changeHandler = useCallback(e => {
+    setInputState(e.target.value);
+  }, []);
+  ```
+  
 <br  />
 
 # 📚 팀 규칙
