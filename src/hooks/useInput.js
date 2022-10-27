@@ -5,12 +5,9 @@ const useInput = (validateValue, initValue = '') => {
 
   const valueIsValid = validateValue(inputState);
 
-  const changeHandler = useCallback(
-    e => {
-      setInputState(e.target.value);
-    },
-    [inputState]
-  );
+  const changeHandler = useCallback(e => {
+    setInputState(e.target.value);
+  }, []);
 
   const reset = () => {
     setInputState(initValue);

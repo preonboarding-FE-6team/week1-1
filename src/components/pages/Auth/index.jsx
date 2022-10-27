@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect, useMemo } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Button from '../../common/UI/Button';
 import Input from '../../common/UI/Input';
@@ -55,7 +55,7 @@ const AuthForm = () => {
   };
   return (
     <div className={classes.auth}>
-      <img src={loginMode ? '/icon/login.svg' : '/icon/sign-up.svg'} />
+      <img src={loginMode ? '/icon/login.svg' : '/icon/sign-up.svg'} alt="banner" />
       <h1>{loginMode ? 'LOGIN 👋🏻' : 'SIGN UP 👋🏻'}</h1>
       <form onSubmit={submitHandler}>
         <Input
