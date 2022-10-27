@@ -18,17 +18,17 @@
 </br>
 
 # 🖥 Demo
-**회워가입**    
-![join](https://user-images.githubusercontent.com/46988995/198378448-0fa850cf-37e1-472b-a645-08daea43b072.gif)  
+**회원가입**  
+<img width="300" alt="signup" src="https://user-images.githubusercontent.com/46988995/198378448-0fa850cf-37e1-472b-a645-08daea43b072.gif">  
 
 **로그인**  
-![login](https://user-images.githubusercontent.com/46988995/198378645-0fa22b5a-41b1-456d-99d0-bafabc2e2557.gif)
+<img width="300" alt="signin" src="https://user-images.githubusercontent.com/46988995/198378645-0fa22b5a-41b1-456d-99d0-bafabc2e2557.gif">  
 
 **할 일 추가**  
-![add](https://user-images.githubusercontent.com/46988995/198378734-65f8596a-57b8-453b-bc4f-3a02d9190434.gif)  
+<img width="300" alt="add" src="https://user-images.githubusercontent.com/46988995/198378734-65f8596a-57b8-453b-bc4f-3a02d9190434.gif">  
 
 **할 일 수정 및 삭제**  
-![modify](https://user-images.githubusercontent.com/46988995/198378753-613e63a8-2e03-48b4-b454-ca1b95189007.gif)  
+<img width="300" alt="modify" src="https://user-images.githubusercontent.com/46988995/198378753-613e63a8-2e03-48b4-b454-ca1b95189007.gif">    
 
 
 </br>
