@@ -4,7 +4,7 @@ import Button from '../UI/Button';
 import Input from '../UI/Input';
 import classes from './AuthForm.module.css';
 import useAxios from '../../hooks/useAxios';
-import { authAPI } from '../../store/api';
+import { authAPI } from '../../utils/api';
 import useInput from '../../hooks/useInput';
 
 const AuthForm = () => {
