@@ -250,26 +250,36 @@ React, React-router-dom, axios, npm, CSS
 ## 4. 로그인 여부에 따른 Redirect 처리
 
 - 선정이유
-
-  - 코드가 직관적이어서 가독성이 좋다.
-  - useEffect를 사용해 리다이렉트 처리 시, 렌더링 이후 리다이렉트가 발생한다. 따라서 해당 DOM에 진입하지 못하도록 코드를 설계함.
+  - 코드가 직관적이어서 가독성이 좋음
+  - 페이지 컴포넌트에서 Redirect를 처리하지 않고 Route에서 처리하여 로직을 분리했기 때문에 페이지 컴포넌트에서는 Redirect를 신경쓰지 않아도 됨
 
 - 코드 설계 방식
 
   ```jsx
-  import React from 'react';
   import { Navigate } from 'react-router-dom';
-  import AuthForm from '../components/auth/AuthForm';
 
-  const Auth = () => {
-    if (window.localStorage.getItem('authToken')) {
-      return <Navigate to="/todo"></Navigate>;
-    }
+  function AuthRoute({ element, destination, reversed }) {
+    const accessToken = localStorage.getItem('authToken');
+    const isAuthorized = reversed ? !accessToken : accessToken;
+    return isAuthorized ? element : <Navigate to={destination} />;
+  }
 
-    return <AuthForm />;
-  };
+  export default AuthRoute;
 
-  export default Auth;
+  ```
+  ```jsx
+  function App() {
+    return (
+      <div className="App">
+        <AlertModalProvider>
+          <Routes>
+            <Route path="/" element={<AuthRoute element={<Auth />} destination="/todo" reversed />} />
+            <Route path="/todo" element={<AuthRoute element={<Todo />} destination="/" />} />
+          </Routes>
+        </AlertModalProvider>
+      </div>
+    );
+  }
   ```
 
 <br />

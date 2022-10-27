@@ -1,12 +1,13 @@
 import React, { useState, useRef, useEffect, useContext } from 'react';
-import useAxios from '../../hooks/useAxios';
-import { todoAPI } from '../../store/api';
-import { TodosDispatchContext } from '../../store/todo-context';
-import Input from '../UI/Input';
+import useAxios from '../../../hooks/useAxios';
+import { todoAPI } from '../../../utils/api';
+import { TodosDispatchContext } from '../../../store/todo-context';
+import Input from '../../common/UI/Input';
 import classes from './TodoItem.module.css';
 
-const TodoItem = ({ id, todo, isCompleted }) => {
+const TodoItem = ({ id, todo, isCompleted: prevIsCompleted }) => {
   const [editMode, setEditMode] = useState(false);
+  const [isCompleted, setIsCompleted] = useState(prevIsCompleted);
   const { updateTodoState, deleteTodoState } = useContext(TodosDispatchContext);
   const updateTodo = useAxios(todoAPI.updateTodo);
   const deleteTodo = useAxios(todoAPI.deleteTodo);
@@ -46,6 +47,15 @@ const TodoItem = ({ id, todo, isCompleted }) => {
     });
   };
 
+  const toggleCopmleteHandler = () => {
+    updateTodo([id, todo, !isCompleted], {
+      onSuccess: data => {
+        updateTodoState(data);
+        setIsCompleted(prevState => !prevState);
+      },
+    });
+  };
+
   const toggleEditHandler = () => {
     setEditMode(prevMode => !prevMode);
   };
@@ -67,15 +77,9 @@ const TodoItem = ({ id, todo, isCompleted }) => {
       <div className={classes['checkbox-container']}>
         <img
           className={classes['i-img']}
-          onClick={updateTodo}
+          onClick={toggleCopmleteHandler}
           src={isCompleted ? `/icon/check-o.png` : `/icon/check.svg`}
         />
-        {/* <input
-          type="checkbox"
-          id="check"
-          checked={isCompleted}
-          onChange={updateTodo.bind(null, id, todo, !isCompleted)}
-        /> */}
         <label htmlFor="check" className={isCompleted ? classes.completed : ''}>
           {todo}
         </label>

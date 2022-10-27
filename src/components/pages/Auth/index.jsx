@@ -1,11 +1,11 @@
 import React, { useState, useRef, useEffect, useMemo } from 'react';
 import { useNavigate } from 'react-router-dom';
-import Button from '../UI/Button';
-import Input from '../UI/Input';
-import classes from './AuthForm.module.css';
-import useAxios from '../../hooks/useAxios';
-import { authAPI } from '../../store/api';
-import useInput from '../../hooks/useInput';
+import Button from '../../common/UI/Button';
+import Input from '../../common/UI/Input';
+import classes from './index.module.css';
+import useAxios from '../../../hooks/useAxios';
+import { authAPI } from '../../../utils/api';
+import useInput from '../../../hooks/useInput';
 
 const AuthForm = () => {
   const navigate = useNavigate();

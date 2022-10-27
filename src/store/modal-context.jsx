@@ -1,5 +1,5 @@
 import { createContext, useState } from 'react';
-import AlertModal from '../components/UI/AlertModal';
+import AlertModal from '../components/common/UI/AlertModal';
 
 const AlertModalContext = createContext();
 
