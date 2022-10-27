@@ -1,6 +1,6 @@
 import React from 'react';
-import Todos from '../components/todo/Todos';
 import { Navigate } from 'react-router-dom';
+import Todos from '../components/todo/Todos';
 
 const Todo = () => {
   if (!window.localStorage.getItem('authToken')) {
