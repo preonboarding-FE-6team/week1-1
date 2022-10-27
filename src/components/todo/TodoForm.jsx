@@ -1,23 +1,33 @@
 import React, { useRef, useContext, useEffect } from 'react';
-import { TodosDisPatchContext } from '../../store/todo-context';
+import { TodosDispatchContext } from '../../store/todo-context';
+import useAxios from '../../hooks/useAxios';
+import { todoAPI } from '../../store/api';
 import Input from '../UI/Input';
 import Button from '../UI/Button';
 import classes from './TodoForm.module.css';
 
 const TodoForm = () => {
   const todoInputRef = useRef();
-  const { addTodo } = useContext(TodosDisPatchContext);
+  const { getTodoState, createTodoState } = useContext(TodosDispatchContext);
+  const getTodos = useAxios(todoAPI.getTodos);
+  const createTodo = useAxios(todoAPI.createTodo);
 
   useEffect(() => {
     todoInputRef.current.focus();
+    getTodos([], {
+      onSuccess: data => getTodoState(data),
+    });
   }, []);
 
   const submitTodoHandler = e => {
     e.preventDefault();
 
-    addTodo(todoInputRef.current.value);
-
-    todoInputRef.current.value = '';
+    createTodo([todoInputRef.current.value], {
+      onSuccess: data => {
+        todoInputRef.current.value = '';
+        createTodoState(data);
+      },
+    });
   };
 
   return (
