@@ -3,7 +3,6 @@ import classes from './Input.module.css';
 
 const Input = forwardRef(({ className, id, label, name, type, value, onChange, placeholder }, ref) => {
   const inputClass = ['todo-input'].includes(className) ? className : 'default';
-
   return (
     <div className={`${classes.input} ${classes[inputClass]}`}>
       <label htmlFor={id}>{label}</label>
@@ -21,4 +20,4 @@ const Input = forwardRef(({ className, id, label, name, type, value, onChange, p
   );
 });
 
-export default Input;
+export default React.memo(Input);

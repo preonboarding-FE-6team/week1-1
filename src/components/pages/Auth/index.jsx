@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect, useMemo } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Button from '../../common/UI/Button';
 import Input from '../../common/UI/Input';
@@ -39,8 +39,7 @@ const AuthForm = () => {
   };
 
   const setToken = token => {
-    // eslint-disable-next-line
-    window.localStorage.setItem('authToken', token['access_token']);
+    window.localStorage.setItem('authToken', token.access_token);
 
     navigate('/todo');
   };
@@ -96,4 +95,4 @@ const AuthForm = () => {
   );
 };
 
-export default AuthForm;
+export default React.memo(AuthForm);
