@@ -32,8 +32,6 @@
     "require-await": "error",
     "arrow-parens": ["error", "as-needed"], // a => {}
     "no-param-reassign": ["error", { "props": false }],
-    "import/no-unresolved": "off",
-    "import/extensions": ["off"],
     "no-unused-expressions": [
       "error",
       {
@@ -42,6 +40,7 @@
         "allowTaggedTemplates": true
       }
     ],
+    "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
     "max-len": [
       "error",
       {
