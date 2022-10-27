@@ -1,9 +1,9 @@
 import React, { useRef, useContext, useEffect } from 'react';
-import { TodosDispatchContext } from '../../store/todo-context';
-import useAxios from '../../hooks/useAxios';
-import { todoAPI } from '../../utils/api';
-import Input from '../UI/Input';
-import Button from '../UI/Button';
+import { TodosDispatchContext } from '../../../store/todo-context';
+import useAxios from '../../../hooks/useAxios';
+import { todoAPI } from '../../../utils/api';
+import Input from '../../common/UI/Input';
+import Button from '../../common/UI/Button';
 import classes from './TodoForm.module.css';
 
 const TodoForm = () => {
