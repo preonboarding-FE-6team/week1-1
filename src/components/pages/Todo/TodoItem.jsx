@@ -1,8 +1,8 @@
 import React, { useState, useRef, useEffect, useContext } from 'react';
-import useAxios from '../../hooks/useAxios';
-import { todoAPI } from '../../utils/api';
-import { TodosDispatchContext } from '../../store/todo-context';
-import Input from '../UI/Input';
+import useAxios from '../../../hooks/useAxios';
+import { todoAPI } from '../../../utils/api';
+import { TodosDispatchContext } from '../../../store/todo-context';
+import Input from '../../common/UI/Input';
 import classes from './TodoItem.module.css';
 
 const TodoItem = ({ id, todo, isCompleted }) => {
