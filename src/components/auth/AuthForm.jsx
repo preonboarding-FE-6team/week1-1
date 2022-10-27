@@ -1,15 +1,16 @@
-import React, { useState, useRef, useEffect, useContext } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Button from '../UI/Button';
 import Input from '../UI/Input';
 import classes from './AuthForm.module.css';
+import useAxios from '../../hooks/useAxios';
+import { authAPI } from '../../store/api';
 import useInput from '../../hooks/useInput';
-import useHttp from '../../hooks/useHttp';
-import { AlertModalContext } from '../../store/modal-context';
 
 const AuthForm = () => {
   const navigate = useNavigate();
-  const modal = useContext(AlertModalContext);
+  const signIn = useAxios(authAPI.signIn);
+  const signUp = useAxios(authAPI.signUp);
 
   const {
     value: emailValue,
@@ -24,7 +25,6 @@ const AuthForm = () => {
     reset: passwordReset,
   } = useInput(value => value.length >= 8);
 
-  const sendRequest = useHttp();
   const [loginMode, setLoginMode] = useState(true);
   const emailInputRef = useRef();
 
@@ -48,22 +48,11 @@ const AuthForm = () => {
   const submitHandler = e => {
     e.preventDefault();
 
-    const url = loginMode ? 'auth/signin' : 'auth/signup';
+    const handler = loginMode ? signIn : signUp;
 
-    sendRequest(
-      url,
-      {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          email: emailValue,
-          password: passwordValue,
-        }),
-      },
-      setToken
-    );
+    handler([emailValue, passwordValue], {
+      onSuccess: data => setToken(data),
+    });
   };
   return (
     <div className={classes.auth}>
