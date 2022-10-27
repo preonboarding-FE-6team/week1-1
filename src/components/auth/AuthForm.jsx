@@ -1,13 +1,15 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect, useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Button from '../UI/Button';
 import Input from '../UI/Input';
 import classes from './AuthForm.module.css';
 import useInput from '../../hooks/useInput';
 import useHttp from '../../hooks/useHttp';
+import { AlertModalContext } from '../../store/modal-context';
 
 const AuthForm = () => {
   const navigate = useNavigate();
+  const modal = useContext(AlertModalContext);
 
   const {
     value: emailValue,
