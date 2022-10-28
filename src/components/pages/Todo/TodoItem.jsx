@@ -65,8 +65,8 @@ const TodoItem = ({ id, todo, isCompleted: prevIsCompleted }) => {
       <li className={classes['todo-item']}>
         <Input type={'text'} id={'text'} ref={editInputRef} />
         <div>
-          <img src={`/icon/i_save.png`} className={classes['i-img']} onClick={updateTodoHandler} />
-          <img src={`/icon/i_cancel.png`} className={classes['i-img']} onClick={toggleEditHandler} />
+          <img src={`/icon/i_save.png`} className={classes['i-img']} onClick={updateTodoHandler} alt="수정 버튼" />
+          <img src={`/icon/i_cancel.png`} className={classes['i-img']} onClick={toggleEditHandler} alt="취소 버튼" />
         </div>
       </li>
     );
@@ -79,14 +79,15 @@ const TodoItem = ({ id, todo, isCompleted: prevIsCompleted }) => {
           className={classes['i-img']}
           onClick={toggleCopmleteHandler}
           src={isCompleted ? `/icon/check-o.png` : `/icon/check.svg`}
+          alt="완료 버튼"
         />
         <label htmlFor="check" className={isCompleted ? classes.completed : ''}>
           {todo}
         </label>
       </div>
       <div className={classes['btn-container']}>
-        <img src={`/icon/i_fix.png`} className={classes['i-img']} onClick={toggleEditHandler} />
-        <img src={`/icon/i_delete.png`} className={classes['i-img']} onClick={deleteTodoHandler} />
+        <img src={`/icon/i_fix.png`} className={classes['i-img']} onClick={toggleEditHandler} alt="편집 버튼" />
+        <img src={`/icon/i_delete.png`} className={classes['i-img']} onClick={deleteTodoHandler} alt="삭제 버튼" />
       </div>
     </li>
   );
