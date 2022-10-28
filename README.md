@@ -64,9 +64,7 @@ React, React-router-dom, Axios, npm, CSS
 
 ## 1. 디렉토리 구조
 
-
 <img width="250" height="500" src="https://user-images.githubusercontent.com/102936206/198420786-154a6198-02af-4cad-b37c-6166eee28d32.png">
-
 
 - 컴포넌트(components), 훅스(hooks), 상태관리(store), 함수(utils)로 직관적인 폴더명을 사용함으로써 구조 파악이 원활
 - components 내 common과 pages로 관심사 분리가 명확
@@ -91,7 +89,6 @@ React, React-router-dom, Axios, npm, CSS
   1. 알림창이 띄어져 있는 동안 스크립트가 일시 정지되며 동작에 제한을 받음
   2. 스타일링이 불가능
 - 위의 단점을 보완하기 위해 알림 모달을 직접 만들어 사용
-
 
 - 코드 설계 방식:react의 context를 이용해 전역에서 모달창을 쓸 수 있도록 함
 
@@ -311,7 +308,6 @@ React, React-router-dom, Axios, npm, CSS
 
 ### 6-2. `useCallback` 사용
 
-
 - useCallback을 사용해 무분별한 함수 호출 방지
 
 - 코드 설계 방식
@@ -321,7 +317,6 @@ React, React-router-dom, Axios, npm, CSS
     setInputState(e.target.value);
   }, []);
   ```
-
 
 # 📢 프로젝트 실행방법
 
@@ -338,7 +333,6 @@ npm start
 ```
 
 <br  />
-
 
 # 📚 팀 규칙
 
