@@ -101,7 +101,7 @@ React, React-router-dom, axios, npm, CSS
   - 위의 단점을 보완하기 위해 알림 모달을 직접 만들어 사용
 
 - 코드 설계 방식
-  react의 context를 이용해 전역에서 모달창을 쓸 수 있도록 함.
+  react의 context를 이용해 전역에서 모달창을 쓸 수 있도록 함
 
   ```jsx
   import { createContext, useState } from 'react';
@@ -134,7 +134,7 @@ React, React-router-dom, axios, npm, CSS
 
 ### 2-3. UX 전반
 
-- Auth 페이지 접속 시 이메일 input 에 focus, Todo 페이지 접속 시 Todo추가 input에 focus를 함으로써 사용자 경험 향상.
+- Auth 페이지 접속 시 이메일 input 에 focus, Todo 페이지 접속 시 Todo추가 input에 focus를 함으로써 사용자 경험 향상
 
 <br  />
 
@@ -142,9 +142,9 @@ React, React-router-dom, axios, npm, CSS
 
 ### 3-1. axios의 인스턴스, 인터셉터 활용
 
-- 선정이유:
-  - axios의 인스턴스를 이용하여 인증정보 유무에 따라 api 요청 처리가 가능하다.
-  - 공통부분을 인터셉터가 처리해주기 때문에 유지보수성이 뛰어나다.
+- 선정이유
+  - axios의 인스턴스를 이용하여 인증정보 유무에 따라 api 요청 처리가 가능
+  - 공통부분을 인터셉터가 처리해주기 때문에 유지보수성이 뛰어남
 - 코드 설계 방식 (참고 링크: [[관련 PR](https://github.com/preonboarding-FE-6team/week1-1/pull/7)])
 
   ```jsx
@@ -299,7 +299,7 @@ React, React-router-dom, axios, npm, CSS
 
 ## 5. 상태관리
 
-- 선정이유:
+- 선정이유
   - Context를 사용하여 불필요한 props drilling 방지
   - Todo 배열을 관리하는 Context(`TodosContext`)와 Todo를 추가, 수정, 삭제하는 Context를 분리(`TodosDisPatchContext`)해 Todo의 변화에 따른 불필요한 리렌더링 방지
 - 코드 설계 방식 <br />
@@ -311,7 +311,8 @@ React, React-router-dom, axios, npm, CSS
 
 ### 6-1. `React.memo` 사용
 
-- 선정이유: Memoization 기능을 사용해 props가 변하지 않는 투두 아이템 리렌더링 방지
+- 선정이유
+  - Memoization 기능을 사용해 props가 변하지 않는 투두 아이템 리렌더링 방지
 - 코드 설계 방식
 
   ```jsx
@@ -329,7 +330,8 @@ React, React-router-dom, axios, npm, CSS
 
 ### 6-2. `useCallback` 사용
 
-- 선정이유: useCallback을 사용해 무분별한 함수 호출 방지
+- 선정이유
+  - useCallback을 사용해 무분별한 함수 호출 방지
 - 코드 설계 방식
 
   ```jsx
