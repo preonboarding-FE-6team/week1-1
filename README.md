@@ -4,7 +4,7 @@
 
 > 기간 :2022년 10월 25일(화) - 2022년 10월 28일(금)
 
-**📎[배포링크 바로가기](https://best-practice-todo-list.vercel.app/)**  
+**📎[배포링크 바로가기](https://best-practice-todo-list.vercel.app/)**
 
 </br>
 
@@ -18,18 +18,18 @@
 </br>
 
 # 🖥 Demo
+
 **회원가입**  
-<img width="300" alt="signup" src="https://user-images.githubusercontent.com/46988995/198378448-0fa850cf-37e1-472b-a645-08daea43b072.gif">  
+<img width="300" alt="signup" src="https://user-images.githubusercontent.com/46988995/198378448-0fa850cf-37e1-472b-a645-08daea43b072.gif">
 
 **로그인**  
-<img width="300" alt="signin" src="https://user-images.githubusercontent.com/46988995/198378645-0fa22b5a-41b1-456d-99d0-bafabc2e2557.gif">  
+<img width="300" alt="signin" src="https://user-images.githubusercontent.com/46988995/198378645-0fa22b5a-41b1-456d-99d0-bafabc2e2557.gif">
 
 **할 일 추가**  
-<img width="300" alt="add" src="https://user-images.githubusercontent.com/46988995/198378734-65f8596a-57b8-453b-bc4f-3a02d9190434.gif">  
+<img width="300" alt="add" src="https://user-images.githubusercontent.com/46988995/198378734-65f8596a-57b8-453b-bc4f-3a02d9190434.gif">
 
 **할 일 수정 및 삭제**  
-<img width="300" alt="modify" src="https://user-images.githubusercontent.com/46988995/198378753-613e63a8-2e03-48b4-b454-ca1b95189007.gif">    
-
+<img width="300" alt="modify" src="https://user-images.githubusercontent.com/46988995/198378753-613e63a8-2e03-48b4-b454-ca1b95189007.gif">
 
 </br>
 
@@ -71,7 +71,7 @@ React, React-router-dom, axios, npm, CSS
 
 ## 1. 폴더 구조
 
-(이미지)
+<img width="250" alt="image" src="https://user-images.githubusercontent.com/76088728/198422657-7e1cdc2d-7ef2-48c4-80c6-20ac23b4b4c9.png">
 
 - 선정이유
   - 컴포넌트(components), 훅스(hooks), 페이지(pages), 상태관리(store) 별로 폴더를 나누어 직관적인 폴더명을 사용함으로써 구조 파악이 원활
@@ -262,6 +262,7 @@ React, React-router-dom, axios, npm, CSS
 ## 4. 로그인 여부에 따른 Redirect 처리
 
 - 선정이유
+
   - 코드가 직관적이어서 가독성이 좋음
   - 페이지 컴포넌트에서 Redirect를 처리하지 않고 Route에서 처리하여 로직을 분리했기 때문에 페이지 컴포넌트에서는 Redirect를 신경쓰지 않아도 됨
 
@@ -277,8 +278,8 @@ React, React-router-dom, axios, npm, CSS
   }
 
   export default AuthRoute;
-
   ```
+
   ```jsx
   function App() {
     return (
@@ -325,10 +326,10 @@ React, React-router-dom, axios, npm, CSS
 
   export default React.memo(TodoItem);
   ```
-  
+
 ### 6-2. `useCallback` 사용
 
-- 선정이유: useCallback을 사용해 무분별한 함수 호출 방지    
+- 선정이유: useCallback을 사용해 무분별한 함수 호출 방지
 - 코드 설계 방식
 
   ```jsx
@@ -336,7 +337,7 @@ React, React-router-dom, axios, npm, CSS
     setInputState(e.target.value);
   }, []);
   ```
-  
+
 <br  />
 
 # 📚 팀 규칙
