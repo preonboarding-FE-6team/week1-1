@@ -10,32 +10,26 @@
 
 # 👨‍👩‍👧‍👦 Members
 
-|                                           최승진<br/>(팀장)                                           |                                         임준홍<br/>(부팀장)                                         |                                                곽현                                                 |                                                  문도연                                                  |                                                 선민경                                                  |                                                 소윤호                                                  |                                                 이유진                                                  |                                                 최원오                                                  |
-| :---------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------: |
-| <img src="https://avatars.githubusercontent.com/u/46988995?v=4" alt="tooooo1" width="60" height="60"> | <img src="https://avatars.githubusercontent.com/u/67459853?v=4" alt="helen" width="60" height="60"> | <img src="https://avatars.githubusercontent.com/u/73919235?v=4" alt="flora" width="60" height="60"> | <img src="https://avatars.githubusercontent.com/u/102936206?v=4" alt="magictaro" width="60" height="60"> | <img src="https://avatars.githubusercontent.com/u/76088728?v=4" alt="magictaro" width="60" height="60"> | <img src="https://avatars.githubusercontent.com/u/30254570?v=4" alt="magictaro" width="60" height="60"> | <img src="https://avatars.githubusercontent.com/u/42020919?v=4" alt="magictaro" width="60" height="60"> | <img src="https://avatars.githubusercontent.com/u/99406837?v=4" alt="magictaro" width="60" height="60"> |
-|                                [yondo123](https://github.com/yondo123)                                |                            [tesseractjh](https://github.com/tesseractjh)                            |                               [kwakhyun](https://github.com/kwakhyun)                               |                               [Moondoyeon](https://github.com/Moondoyeon)                                |                                 [seonsy44](https://github.com/seonsy44)                                 |                                 [younhoso](https://github.com/younhoso)                                 |                                    [2ujin](https://github.com/2ujin)                                    |                                [choi1five](https://github.com/choi1five)                                |
+|                                           최승진<br/>(팀장)                                           |                                         임준홍<br/>(부팀장)                                         |                                            문도연<br/>(서기)                                             |                                           최원오<br/>(부서기)                                           |                                         소윤호<br/>(부서기)                                         |                                            선민경<br/>(팀원)                                            |                                             곽현<br/>(팀원)                                             |                                            이유진<br/>(팀원)                                            |
+| :---------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------: |
+| <img src="https://avatars.githubusercontent.com/u/46988995?v=4" alt="tooooo1" width="60" height="60"> | <img src="https://avatars.githubusercontent.com/u/67459853?v=4" alt="helen" width="60" height="60"> | <img src="https://avatars.githubusercontent.com/u/102936206?v=4" alt="magictaro" width="60" height="60"> | <img src="https://avatars.githubusercontent.com/u/99406837?v=4" alt="magictaro" width="60" height="60"> | <img src="https://avatars.githubusercontent.com/u/30254570?v=4" alt="flora" width="60" height="60"> | <img src="https://avatars.githubusercontent.com/u/76088728?v=4" alt="magictaro" width="60" height="60"> | <img src="https://avatars.githubusercontent.com/u/73919235?v=4" alt="magictaro" width="60" height="60"> | <img src="https://avatars.githubusercontent.com/u/42020919?v=4" alt="magictaro" width="60" height="60"> |
+|                                [yondo123](https://github.com/yondo123)                                |                            [tesseractjh](https://github.com/tesseractjh)                            |                               [Moondoyeon](https://github.com/Moondoyeon)                                |                                [choi1five](https://github.com/choi1five)                                |                               [younhoso](https://github.com/younhoso)                               |                                 [seonsy44](https://github.com/seonsy44)                                 |                                 [kwakhyun](https://github.com/kwakhyun)                                 |                                   [@2ujin@](https://github.com/2ujin)                                   |
 
 </br>
 
 # 🖥 Demo
 
-**회원가입**  
-<img width="300" alt="signup" src="https://user-images.githubusercontent.com/46988995/198378448-0fa850cf-37e1-472b-a645-08daea43b072.gif">
-
-**로그인**  
-<img width="300" alt="signin" src="https://user-images.githubusercontent.com/46988995/198378645-0fa22b5a-41b1-456d-99d0-bafabc2e2557.gif">
-
-**할 일 추가**  
-<img width="300" alt="add" src="https://user-images.githubusercontent.com/46988995/198378734-65f8596a-57b8-453b-bc4f-3a02d9190434.gif">
-
-**할 일 수정 및 삭제**  
-<img width="300" alt="modify" src="https://user-images.githubusercontent.com/46988995/198378753-613e63a8-2e03-48b4-b454-ca1b95189007.gif">
+| **회원가입**                                                                                                                                            | **로그인**                                                                                                                                              |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <img width="250" height="400" alt="signup" src="https://user-images.githubusercontent.com/46988995/198378448-0fa850cf-37e1-472b-a645-08daea43b072.gif"> | <img width="250" height="400" alt="signin" src="https://user-images.githubusercontent.com/46988995/198378645-0fa22b5a-41b1-456d-99d0-bafabc2e2557.gif"> |
+| **할 일 추가**                                                                                                                                          | **할 일 수정 및 삭제**                                                                                                                                  |
+| <img width="250" height="400" alt="add" src="https://user-images.githubusercontent.com/46988995/198378734-65f8596a-57b8-453b-bc4f-3a02d9190434.gif">    | <img width="250" height="400" alt="modify" src="https://user-images.githubusercontent.com/46988995/198378753-613e63a8-2e03-48b4-b454-ca1b95189007.gif"> |
 
 </br>
 
 # **⚡️ Skills**
 
-React, React-router-dom, axios, npm, CSS
+React, React-router-dom, Axios, npm, CSS
 
 </br>
 
@@ -44,8 +38,7 @@ React, React-router-dom, axios, npm, CSS
 ### **1) Auth**
 
 - 이메일과 비밀번호의 유효성 검사
-  - 이메일 조건: `@` 포함
-  - 비밀번호 조견: 8자 이상
+  - 이메일 조건: `@` 포함, 비밀번호 조건: 8자 이상
   - 입력된 이메일과 비밀번호가 위 조건을 만족할 때 버튼 활성화
 - 로그인 API를 호출하고, 올바른 응답을 받았을 때 `/todo` 경로로 이동
   - 응답받은 JWT는 로컬 스토리지에 저장
@@ -63,45 +56,44 @@ React, React-router-dom, axios, npm, CSS
 - 삭제 / 수정
   - 수정버튼 존재, 해당 버튼을 누르면 수정모드 활성화, 내용 수정가능
   - 수정모드에서 제출 버튼과 취소버튼이 표시되며 수정 내용 제출/취소 가능
-  - 삭제버튼이 존재, 해당 버튼을 누르면 투두 리스트 삭제
+  - 삭제버튼 존재, 해당 버튼을 누르면 투두 리스트 삭제
 
 </br>
 
 # 👍 **Best Practice**
 
-## 1. 폴더 구조
+## 1. 디렉토리 구조
 
-<img width="250" alt="image" src="https://user-images.githubusercontent.com/76088728/198422657-7e1cdc2d-7ef2-48c4-80c6-20ac23b4b4c9.png">
 
-- 선정이유
-  - 컴포넌트(components), 훅스(hooks), 페이지(pages), 상태관리(store) 별로 폴더를 나누어 직관적인 폴더명을 사용함으로써 구조 파악이 원활
-  - 컴포넌트 내부 Auth와 Todo로 관심사를 분리가 명확
-  - UI 컴포넌트용 폴더를 분리해 재사용되는 UI 컴포넌트를 관리
+<img width="250" height="500" src="https://user-images.githubusercontent.com/102936206/198420786-154a6198-02af-4cad-b37c-6166eee28d32.png">
+
+
+- 컴포넌트(components), 훅스(hooks), 상태관리(store), 함수(utils)로 직관적인 폴더명을 사용함으로써 구조 파악이 원활
+- components 내 common과 pages로 관심사 분리가 명확
+- 로직을 담당하는 .jsx 파일과 UI를 담당하는 .module.css 파일을 분리
+- UI 컴포넌트용 폴더를 분리해 재사용되는 UI 컴포넌트를 관리
 
 <br  />
 
 ## 2. UI/UX
 
-### 2-1. UI 전반
+### 2-1. UI/UX 전반
 
-- 선정이유
-  - 적절한 이미지와 아이콘 사용으로 깔끔하고 보기 편한 UI 구성
-  - 웹과 모바일 사용 환경을 고려해 미디어 쿼리 사용
-- 코드 설계 방식
+- 적절한 이미지와 아이콘 사용으로 깔끔하고 보기 편한 UI 구성
+- 웹과 모바일 사용 환경을 고려해 미디어 쿼리 사용
+- Auth 페이지 접속시 이메일 input 에 focus, Todo 페이지 접속시 할일추가 input에 focus하여 UX 향상
 
 ### 2-2. 알림모달
 
-<img width="300" alt="image" src="https://user-images.githubusercontent.com/76088728/198300183-a304dfaf-64e5-4639-b541-06727537eb37.gif">
+<img width="300" alt="alarm Modal" src="https://user-images.githubusercontent.com/76088728/198300183-a304dfaf-64e5-4639-b541-06727537eb37.gif">
 
-- 선정이유
+- 자바스크립트에서 기본으로 제공되는 알림창은 단점이 있음
+  1. 알림창이 띄어져 있는 동안 스크립트가 일시 정지되며 동작에 제한을 받음
+  2. 스타일링이 불가능
+- 위의 단점을 보완하기 위해 알림 모달을 직접 만들어 사용
 
-  - 자바스크립트에서 기본으로 제공되는 알림창은 단점이 있음
-    1. 알림창이 띄어져 있는 동안 스크립트가 일시 정지되며 동작에 제한을 받음
-    2. 스타일링이 불가능
-  - 위의 단점을 보완하기 위해 알림 모달을 직접 만들어 사용
 
-- 코드 설계 방식
-  react의 context를 이용해 전역에서 모달창을 쓸 수 있도록 함
+- 코드 설계 방식:react의 context를 이용해 전역에서 모달창을 쓸 수 있도록 함
 
   ```jsx
   import { createContext, useState } from 'react';
@@ -132,19 +124,14 @@ React, React-router-dom, axios, npm, CSS
   export { AlertModalContext, AlertModalProvider };
   ```
 
-### 2-3. UX 전반
-
-- Auth 페이지 접속 시 이메일 input 에 focus, Todo 페이지 접속 시 Todo추가 input에 focus를 함으로써 사용자 경험 향상
-
 <br  />
 
 ## 3. API 서버통신
 
 ### 3-1. axios의 인스턴스, 인터셉터 활용
 
-- 선정이유
-  - axios의 인스턴스를 이용하여 인증정보 유무에 따라 api 요청 처리가 가능
-  - 공통부분을 인터셉터가 처리해주기 때문에 유지보수성이 뛰어남
+- axios의 인스턴스를 이용하여 인증정보 유무에 따라 api 요청 처리가 가능함
+- 공통부분을 인터셉터가 처리해주기 때문에 유지보수성이 뛰어남
 - 코드 설계 방식 (참고 링크: [[관련 PR](https://github.com/preonboarding-FE-6team/week1-1/pull/7)])
 
   ```jsx
@@ -184,8 +171,7 @@ React, React-router-dom, axios, npm, CSS
 
 ### 3-2. 에러메시지 처리
 
-- 선정이유
-  - 에러 발생시 상태코드별 적절한 에러메시지 및 리다이렉션할 주소 반환
+- 에러 발생시 상태코드별 적절한 에러메시지와 리다이렉션할 주소를 반환함
 - 코드 설계 방식
 
   ```jsx
@@ -261,11 +247,7 @@ React, React-router-dom, axios, npm, CSS
 
 ## 4. 로그인 여부에 따른 Redirect 처리
 
-- 선정이유
-
-  - 코드가 직관적이어서 가독성이 좋음
-  - 페이지 컴포넌트에서 Redirect를 처리하지 않고 Route에서 처리하여 로직을 분리했기 때문에 페이지 컴포넌트에서는 Redirect를 신경쓰지 않아도 됨
-
+- 페이지 컴포넌트가 아닌 Route에서 Redirect를 처리해 로직을 분리함
 - 코드 설계 방식
 
   ```jsx
@@ -299,9 +281,8 @@ React, React-router-dom, axios, npm, CSS
 
 ## 5. 상태관리
 
-- 선정이유
-  - Context를 사용하여 불필요한 props drilling 방지
-  - Todo 배열을 관리하는 Context(`TodosContext`)와 Todo를 추가, 수정, 삭제하는 Context를 분리(`TodosDisPatchContext`)해 Todo의 변화에 따른 불필요한 리렌더링 방지
+- Context를 사용하여 불필요한 props drilling 방지
+- Todo 배열을 관리하는 Context(`TodosContext`)와 Todo를 추가, 수정, 삭제하는 Context를 분리(`TodosDisPatchContext`)해 Todo의 변화에 따른 불필요한 리렌더링 방지
 - 코드 설계 방식 <br />
   <img width="300" alt="image" src="https://user-images.githubusercontent.com/76088728/198300661-ba8f4466-724d-4c0f-9229-3718ca6752a5.png">
 
@@ -311,8 +292,8 @@ React, React-router-dom, axios, npm, CSS
 
 ### 6-1. `React.memo` 사용
 
-- 선정이유
-  - Memoization 기능을 사용해 props가 변하지 않는 투두 아이템 리렌더링 방지
+- Memoization 기능을 사용해 props가 변하지 않는 투두 아이템 리렌더링 방지
+
 - 코드 설계 방식
 
   ```jsx
@@ -330,8 +311,9 @@ React, React-router-dom, axios, npm, CSS
 
 ### 6-2. `useCallback` 사용
 
-- 선정이유
-  - useCallback을 사용해 무분별한 함수 호출 방지
+
+- useCallback을 사용해 무분별한 함수 호출 방지
+
 - 코드 설계 방식
 
   ```jsx
@@ -340,33 +322,48 @@ React, React-router-dom, axios, npm, CSS
   }, []);
   ```
 
+
+# 📢 프로젝트 실행방법
+
+실행할 때 반드시 다음 파일을 최상단에 생성후 실행 해주셔야 합니다.
+
+```
+// .env.local
+REACT_APP_SERVER = 서버주소
+```
+
+```
+npm install
+npm start
+```
+
 <br  />
+
 
 # 📚 팀 규칙
 
 - ### 📕 **Git commit convention**
-  커밋 메세지 영어로 통일
-  | rule | 설명 |
+  | rule     | 설명                                                     |
   | -------- | -------------------------------------------------------- |
-  | Feat | 새로운 기능 추가 |
-  | Fix | 버그 고친 경우 |
-  | Design | css 수정 |
-  | Chore | 빌드 업무 수정, 패키지 매니저 수정 |
-  | !HOTFIX | 급하게 치명적인 버그를 고쳐야하는 경우 |
-  | Docs | 문서 수정 |
-  | Style | 코드 formatting, 세미콜론(;) 누락, 코드 변경이 없는 경우 |
-  | Rename | 파일 및 폴더 구조 변경 |
-  | Refactor | 코드 리팩토링 |
-  | Test | 테스트 코드, 리팩토링 테스트 코드 추가 |
-  | Remove | 파일 삭제 |
-  | Modify | 코드 단순 수정 |
+  | Feat     | 새로운 기능 추가                                         |
+  | Fix      | 버그 고친 경우                                           |
+  | Design   | css 수정                                                 |
+  | Chore    | 빌드 업무 수정, 패키지 매니저 수정                       |
+  | !HOTFIX  | 급하게 치명적인 버그를 고쳐야하는 경우                   |
+  | Docs     | 문서 수정                                                |
+  | Style    | 코드 formatting, 세미콜론(;) 누락, 코드 변경이 없는 경우 |
+  | Rename   | 파일 및 폴더 구조 변경                                   |
+  | Refactor | 코드 리팩토링                                            |
+  | Test     | 테스트 코드, 리팩토링 테스트 코드 추가                   |
+  | Remove   | 파일 삭제                                                |
+  | Modify   | 코드 단순 수정                                           |
 - ### 📘 **Git branch strategy**
   main (배포/운영) ← develop (통합 개발) ← feat-개발내용 (단위 개발)
 
 </br>
 
-# 📝 **회의록**
+# 📝 **문서**
 
-<a href="https://www.notion.so/2022-10-27-35dcd07cf811402686f2b318e62a6792">1차 회의록</a>
+<a href="https://www.notion.so/2022-10-27-35dcd07cf811402686f2b318e62a6792"> 회의록</a>
 </br>
-<a href="https://suddenlydisappeared.notion.site/275961c80dab46b09db7284242c1b1b2">선발과제 개인코드 설명</a>
+<a href="https://suddenlydisappeared.notion.site/275961c80dab46b09db7284242c1b1b2">과제수행 전 개인코드 설명</a>
